@@ -1,4 +1,5 @@
 const mongoose=require("mongoose")
+
 const chairSchema=mongoose.Schema({
     id:{
         type:String,

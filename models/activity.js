@@ -1,9 +1,6 @@
 const mongoose=require("mongoose")
 const activitySchema=mongoose.Schema({
-     id:{
-        type:String,
-        require:true
-    },
+
     name:{
         type:String,
         require:true
@@ -16,14 +13,14 @@ const activitySchema=mongoose.Schema({
         type:Array,
         require:true
     },
-    startDate:{
-        type:Date,
-        require:true
-    },
-     endDate:{
-        type:Date,
-        require:true
-    },
+    // startDate:{
+    //     type:Date,
+    //     require:true
+    // },
+    //  endDate:{
+    //     type:Date,
+    //     require:true
+    // },
      address:{
         type:String,
         require:true
@@ -33,15 +30,20 @@ const activitySchema=mongoose.Schema({
         require:true
     },
     
-     createdOn:{
-        type:Date,
-        require:true
-    },
+    //  createdOn:{
+    //     type:Date,
+    //     require:true
+    // },
      rowStatus:{
         type:Number,
         require:true
     },
      locationHtml:{
+        type:String,
+        require:true
+    },
+    
+    activityType:{
         type:String,
         require:true
     }
