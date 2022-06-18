@@ -1,0 +1,22 @@
+{
+  "name": "ticket-sales-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kardelenceltik/ticket-sales-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kardelenceltik/ticket-sales-core/issues"
+  },
+  "homepage": "https://github.com/kardelenceltik/ticket-sales-core#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
