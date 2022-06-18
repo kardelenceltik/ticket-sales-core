@@ -1,13 +1,15 @@
 const express=require("express")
+
 const app=express()
 const mongoose=require("mongoose")
+require("dotenv/config")
 app.get("/furkan",(req,res)=>{
     res.send({name:"furkan",surname:"altıntaş",age:26})
 })
 
 
 mongoose.connect(
-    "mongodb://localhost:27017/ticket-management",
+    process.env.DB_CONNECT,
      {
     useNewUrlParser: true,
     useUnifiedTopology: true,
