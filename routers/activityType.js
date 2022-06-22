@@ -12,10 +12,7 @@ router.get("/get-by-row-status",async(req,res)=>{
 });
 router.post("/create",async(req,res)=>{
     try {
-        console.log("aa");
         const activityTypeResponse=await activityType.create(req.body)
-        console.log(activityTypeResponse);
-
         res.json(activityTypeResponse)
     } catch (err) {
         res.json(err)
